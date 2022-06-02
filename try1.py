@@ -25,4 +25,5 @@ print(_tree)
 
 #plot 
 fig = Phylo.draw(_tree)
-Phylo.draw_ascii(_tree)
+
+Phylo.write(_tree, "covid_tree.xml", "phyloxml")
