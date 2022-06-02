@@ -32,6 +32,7 @@ def create_tree(fasta_file):
     Phylo.convert('covid_tree.xml','phyloxml', 'covid_tree.nhx', 'newick')
     return 
 #do not change anything before this line 
+
 #######################################
 #######################################
 #######################################
@@ -39,4 +40,6 @@ def create_tree(fasta_file):
 #######################################
 
 #place fasta filename here to automatically generate xml and nhx files 
+
+#visit http://etetoolkit.org/treeview/ to view the generated nhx file 
 create_tree('aligned_FFT-NS-2-input-order_clean.fasta')
