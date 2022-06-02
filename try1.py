@@ -4,6 +4,7 @@ from Bio.Phylo.TreeConstruction import DistanceCalculator as dcl
 from Bio.Phylo.TreeConstruction import DistanceTreeConstructor as dtc 
 import matplotlib.pyplot as plt 
 
+#function code 
 def create_tree(fasta_file):
     #fasta filename 
     title = fasta_file 
@@ -30,5 +31,12 @@ def create_tree(fasta_file):
     Phylo.write(_tree, "covid_tree.xml", "phyloxml")
     Phylo.convert('covid_tree.xml','phyloxml', 'covid_tree.nhx', 'newick')
     return 
+#do not change anything before this line 
+#######################################
+#######################################
+#######################################
+#######################################
+#######################################
 
-create_tree()
+#place fasta filename here to automatically generate xml and nhx files 
+create_tree('aligned_FFT-NS-2-input-order_clean.fasta')
