@@ -25,7 +25,4 @@ print(_tree)
 
 #plot 
 fig = Phylo.draw(_tree)
-text = Phylo.draw_ascii(_tree)
-
-with open('tree.txt', 'w') as f:
-    f.write('text')
+Phylo.draw_ascii(_tree)
